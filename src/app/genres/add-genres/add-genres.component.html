@@ -1,0 +1,10 @@
+<h1>Add Genre</h1>
+<form [formGroup]="genrersForm"(submit)="savegenres()">
+<div class="col-12 mb-2">
+  <label class="form-label">Title</label>
+ <input class="form-control" type="text" name="title" formControlName="title"/>
+</div>
+<div class="col-12 mb-2">
+<button class="bnt btn-outline-secondary float-end" [disabled]="genrersForm.invalid"><i class="far fa-save"></i>save</button>
+</div>
+</form>

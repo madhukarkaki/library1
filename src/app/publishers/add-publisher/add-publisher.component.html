@@ -1,0 +1,10 @@
+<h1>Add publisher</h1>
+<form [formGroup]="publisherForm" (submit)="savePublisher()">
+<div class="col-12 mb-3">
+    <label class="form-label" >Title</label>
+    <input class="form-control" type="text" name="title" formControlName="title"/>
+  </div>
+<div class="col-12 mb-3">
+   <button class="btn btn-outline-secondary float-end" [disabled]="publisherForm.invalid"><i class="far fa-save"></i> Save</button>
+   </div>
+<form>

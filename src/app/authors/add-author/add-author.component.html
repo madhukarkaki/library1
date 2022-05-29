@@ -1,0 +1,25 @@
+<h1>Add Author</h1>
+<form [formGroup]="authorForm" (submit)="saveAuthor()">
+ <div class="row p-2 bg-white">
+   <div class="col-4 mb-3">
+       <label class="form-label">First Name <em class="text-danger">*</em></label>
+       <input class="form-control" type="text" name="firstName" formControlName="firstName"/>
+       
+      </div>
+      <div class="col-4 mb-3">
+        <label>Middle Name</label>
+        <input class="form-control" type="text" name="middleName" formControlName="middleName"/>
+    </div>
+    <div class="col-4 mb-3">
+        <label>Last Name <em class="text-danger"></em>*</label>
+        <input class="form-control" type="text" name="lasttName" formControlName="lastName"/>
+      </div>
+      <div class="col-12 mb-3">
+        <label class="form label">Description</label>
+        <textarea class="form-control" name="description" formControlName="description"></textarea>
+    </div>
+     <div class="col-12 mb-3">
+        <button class="btn btn-outline-secondary float-end"><i class="far fa-save" (click)= "saveAuthor()"></i>Save</button>
+      </div>
+    </div>
+  </form>

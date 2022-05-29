@@ -1,0 +1,24 @@
+<form [formGroup]= "loginform" (submit)="login()">
+  <div style="margin:0 auto;width:300px">
+  <img src="assets/gl.jpeg.png" width="250">
+        <h3 style="text-align:center ;">Welcome to Glint</h3>
+  <div >
+   <div class="col-12">
+          <button type="submit" class="btn btn-primary col-12">Log in with SSO</button><hr>
+    </div>
+   <div class=" col-12 mb-3">
+       <label for="formGroupInput" class="form-label">Password</label> <a class="dropup-item" href="/auth/forgotpassword">Forgot password?</a>
+
+        <input type="text" class="form-control" id="formGroupInput" formControlName="password" placeholder="Enter your password">
+    </div>
+      <div class="col-12">
+  
+          <button type="submit" class="btn btn-primary col-12" >Continue
+         
+        </button>
+       </div>
+    </div>
+    <a class="dropdown-item" href="/auth/register">New to glint? Active your account</a>
+  </div>
+   </form>
+
